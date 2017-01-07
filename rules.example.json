@@ -1,0 +1,4 @@
+{
+  "service1.example.com" : "http://example.com:9000",
+  "service2.example.com" : "http://example.com/something"
+}

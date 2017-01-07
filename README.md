@@ -16,7 +16,7 @@
 ### Docker
 #### x86/x64 Systems
 **Building**
-Use ``docker build -t jordancrawford/virtual-host-redirector .``
+Use ``docker build -t jordancrawford/virtual-host-redirector docker``
 
 **Running**
 Use ``docker run -d -v [local config directory]:/config -p [host port]:80 --name virtual-host-redirector jordancrawford/virtual-host-redirector``
@@ -24,3 +24,10 @@ Use ``docker run -d -v [local config directory]:/config -p [host port]:80 --name
 For example, if your config directory is located at ``~/redirector-config``, then use ``docker run -d -v ~/redirector-config:/config -p 80:80 --name virtual-host-redirector jordancrawford/virtual-host-redirector``.
 
 #### ARM systems (e.g.: Raspberry Pi)
+**Building**
+Use ``docker build -t jordancrawford/virtual-host-redirector:arm docker-arm``
+
+**Running**
+Use ``docker run -d -v [local config directory]:/config -p [host port]:80 --name virtual-host-redirector jordancrawford/virtual-host-redirector:arm``
+
+For example, if your config directory is located at ``~/redirector-config``, then use ``docker run -d -v ~/redirector-config:/config -p 80:80 --name virtual-host-redirector jordancrawford/virtual-host-redirector:arm``.

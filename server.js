@@ -11,7 +11,7 @@ var port = parseInt(args[1]) || 80;
 
 var redirectRules = jsonfile.readFileSync(rulesConfigPath);
 
-console.log('Virtual Host Redirector started on ' + port + '. Read ' + Object.keys(redirectRules).length + ' rules from "' + rulesConfigPath + '".');
+console.log('Virtual Host Redirector started on port ' + port + '. Read ' + Object.keys(redirectRules).length + ' rules from "' + rulesConfigPath + '".');
 
 var app = http.createServer(function(httpRequest, httpResult) {
   var host = httpRequest.headers.host;

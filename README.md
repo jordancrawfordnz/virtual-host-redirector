@@ -1,6 +1,6 @@
-[View on Docker Hub](https://hub.docker.com/r/jordancrawford/virtual-host-redirector)
+**This repo is archived.** It's not being maintained and may no longer work.
 
-[View on GitHub](https://github.com/jordancrawfordnz/virtual-host-redirector)
+Read more about it in my blog post - [Easy access to my Pi on a local network](https://jc.kiwi/local-address-dns/)
 
 ---
 
